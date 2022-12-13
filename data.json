@@ -1,0 +1,186 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "건강 상태 Survey",
+      "start": "2022-12-04T06:00:00+09:00",
+      "finish": "2023-02-28T00:00:00+09:00",
+      "seq": 1,
+      "question": [
+        {
+          "id": 1,
+          "q": "생년월일을 입력해주세요.",
+          "group": {
+            "id": 2,
+            "name": "생년월일과 성별을 입력해주시면,<br>해당 연령대의 건강 정보를 제공해드릴게요.",
+            "seq": 1
+          },
+          "qtype": "PERSON",
+          "answer": [{ "id": 1, "a": "생년월일", "atype": "DATE" }]
+        },
+        {
+          "id": 2,
+          "q": "성별을 선택해주세요.",
+          "group": {
+            "id": 2,
+            "name": "생년월일과 성별을 입력해주시면,<br>해당 연령대의 건강 정보를 제공해드릴게요.",
+            "seq": 1
+          },
+          "qtype": "PERSON",
+          "answer": [
+            { "id": 2, "a": "남성", "atype": "GENDER" },
+            { "id": 3, "a": "여성", "atype": "GENDER" }
+          ]
+        },
+        {
+          "id": 3,
+          "q": "관심지역을 설정해주세요.",
+          "group": {
+            "id": 3,
+            "name": "관심지역을 선택하시면,<br>해당 지역의 맞춤 정보를 알려드릴께요.",
+            "seq": 1
+          },
+          "qtype": "LOCATION",
+          "answer": [{ "id": 4, "a": "관심지역", "atype": "LOCATION" }]
+        },
+        {
+          "id": 4,
+          "q": "일반",
+          "group": { "id": 4, "name": "해당하는 증상이 있나요?", "seq": 3 },
+          "qtype": "SYMTM",
+          "answer": [
+            { "id": 5, "a": "피로", "atype": "SEL" },
+            { "id": 6, "a": "근육통", "atype": "SEL" },
+            { "id": 7, "a": "관절통", "atype": "SEL" },
+            { "id": 8, "a": "발열", "atype": "SEL" },
+            { "id": 9, "a": "체온을 입력하세요.", "atype": "TEXT" }
+          ]
+        },
+        {
+          "id": 5,
+          "q": "호흡기",
+          "group": { "id": 4, "name": "해당하는 증상이 있나요?", "seq": 3 },
+          "qtype": "SYMTM",
+          "answer": [
+            { "id": 10, "a": "호흡곤란", "atype": "SEL" },
+            { "id": 11, "a": "기침", "atype": "SEL" },
+            { "id": 12, "a": "가슴통증", "atype": "SEL" },
+            { "id": 13, "a": "목 통증", "atype": "SEL" },
+            { "id": 14, "a": "후각/미각 상실", "atype": "SEL" },
+            { "id": 15, "a": "콧물", "atype": "SEL" },
+            { "id": 16, "a": "재채기", "atype": "SEL" },
+            { "id": 17, "a": "근육통", "atype": "SEL" },
+            { "id": 18, "a": "관절통", "atype": "SEL" },
+            { "id": 19, "a": "피로", "atype": "SEL" }
+          ]
+        },
+        {
+          "id": 6,
+          "q": "소화기",
+          "group": { "id": 4, "name": "해당하는 증상이 있나요?", "seq": 3 },
+          "qtype": "SYMTM",
+          "answer": [
+            { "id": 20, "a": "복부통증", "atype": "SEL" },
+            { "id": 21, "a": "설사", "atype": "SEL" },
+            { "id": 22, "a": "구토", "atype": "SEL" },
+            { "id": 23, "a": "식욕저하", "atype": "SEL" },
+            { "id": 24, "a": "메스꺼움", "atype": "SEL" }
+          ]
+        },
+        {
+          "id": 7,
+          "q": "기타",
+          "group": { "id": 4, "name": "해당하는 증상이 있나요?", "seq": 3 },
+          "qtype": "SYMTM",
+          "answer": [
+            { "id": 25, "a": "두통", "atype": "SEL" },
+            { "id": 26, "a": "발진", "atype": "SEL" },
+            { "id": 27, "a": "집중력저하", "atype": "SEL" },
+            { "id": 28, "a": "수면 장애", "atype": "SEL" },
+            { "id": 29, "a": "생리주기 변동", "atype": "SEL" },
+            { "id": 30, "a": "기타", "atype": "TEXT" }
+          ]
+        },
+        {
+          "id": 8,
+          "q": "언제부터 증상이 있으셨나요?",
+          "group": { "id": 4, "name": "해당하는 증상이 있나요?", "seq": 3 },
+          "qtype": "SYMTM",
+          "answer": [{ "id": 31, "a": "증상 시작일 입력", "atype": "DATE" }]
+        },
+        {
+          "id": 9,
+          "q": "검사 또는 치료여부",
+          "group": { "id": 4, "name": "해당하는 증상이 있나요?", "seq": 3 },
+          "qtype": "SYMTM",
+          "answer": [
+            { "id": 32, "a": "없음", "atype": "SEL" },
+            { "id": 33, "a": "입원", "atype": "SEL" },
+            { "id": 34, "a": "의사", "atype": "SEL" },
+            { "id": 35, "a": "중환자실", "atype": "SEL" },
+            { "id": 36, "a": "응급실", "atype": "SEL" },
+            { "id": 37, "a": "Virtual", "atype": "SEL" },
+            { "id": 38, "a": "코로나19 선별진료소", "atype": "SEL" },
+            { "id": 39, "a": "긴급 진료센터", "atype": "SEL" },
+            { "id": 40, "a": "기타", "atype": "SEL" }
+          ]
+        },
+        {
+          "id": 10,
+          "q": "COVID19 양성 판정을 받으셨나요?",
+          "group": { "id": 4, "name": "해당하는 증상이 있나요?", "seq": 3 },
+          "qtype": "SYMTM",
+          "answer": [
+            { "id": 41, "a": "네", "atype": "SEL" },
+            { "id": 42, "a": "아니오", "atype": "SEL" },
+            { "id": 43, "a": "모름", "atype": "SEL" }
+          ]
+        },
+        {
+          "id": 11,
+          "q": "COVID19 백신을 접종한 적이 있나요?",
+          "group": { "id": 4, "name": "해당하는 증상이 있나요?", "seq": 3 },
+          "qtype": "SYMTM",
+          "answer": [
+            { "id": 44, "a": "접종한 적 없다", "atype": "SEL" },
+            { "id": 45, "a": "1회", "atype": "SEL" },
+            { "id": 46, "a": "2회", "atype": "SEL" },
+            { "id": 47, "a": "3회", "atype": "SEL" },
+            { "id": 48, "a": "4회 이상", "atype": "SEL" }
+          ]
+        },
+        {
+          "id": 12,
+          "q": "독감 백신을 접종한 적이 있나요?",
+          "group": { "id": 4, "name": "해당하는 증상이 있나요?", "seq": 3 },
+          "qtype": "SYMTM",
+          "answer": [
+            { "id": 49, "a": "접종한", "atype": "SEL" },
+            { "id": 50, "a": "1회", "atype": "SEL" },
+            { "id": 51, "a": "2회", "atype": "SEL" },
+            { "id": 52, "a": "3회", "atype": "SEL" },
+            { "id": 53, "a": "4회 이상", "atype": "SEL" }
+          ]
+        },
+        {
+          "id": 13,
+          "q": "만약 코로나 재유행으로 인해 백신 추가접종을 권장한다면, 추가접종 할 의향이 있으신가요?",
+          "group": null,
+          "qtype": "VACCINE",
+          "answer": [
+            { "id": 54, "a": "네", "atype": "SEL" },
+            { "id": 55, "a": "아니오", "atype": "SEL" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "코로나 후유증 Survey",
+      "start": "2022-12-04T06:00:00+09:00",
+      "finish": "2023-02-28T00:00:00+09:00",
+      "seq": 2,
+      "question": []
+    }
+  ]
+}
